@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+      .bok {
+        /* animation:
+          name: 
+          duration: px
+          timing-function: ease
+          delay: [x]
+          iteration-count: angka | infinite
+          direction: normal | reverse | alternate | alternate-reverse
+          fill-mode: none | forwards | backwards | both
+          play-state:  */
+        width: 100px;
+        height: 100px;
+        display: flex;
+        margin: auto;
+        text-align: center;
+        background-color: red;
+        animation-name: satu;
+        animation-duration: 2s;
+        animation-iteration-count: 2;
+        animation-direction: alternate-reverse;
+        animation-fill-mode: both;
+        animation-play-state: running;
+        /* -webkit-animation-iteration-count: 2s; */
+        /* -ms-zoom-animation: ; */
+
+        /* animation- */
+      }
+
+      @keyframes satu {
+        0% {
+          width: 100px;
+          height: 100px;
+        }
+        50% {
+          width: 200px;
+          height: 200px;
+        }
+        100% {
+          width: 300px;
+          height: 300px;
+        }
+      }
+      .bok span {
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bok"><span>Arfan Salman Ramadhan</span></div>
+  </body>
+</html>

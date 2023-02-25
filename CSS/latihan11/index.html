@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Static Relative Absolute & Fixed</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        height: 20000px;
+      }
+
+      .container {
+        width: 600px;
+        height: 600px;
+        border: 5px black dashed;
+        position: relative;
+      }
+      /* 
+      div {
+        width: 200px;
+        height: 200px;
+        margin: auto;
+      }
+
+      .satu {
+        width: 100%;
+        height: 40px;
+        background-color: violet;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+      }
+
+      .dua {
+        width: 200px;
+        background-color: red;
+      }
+
+      .tiga {
+        width: 200px;
+        background-color: blue;
+      } */
+      div {
+        width: 250px;
+        height: 250px;
+        margin: auto;
+        position: relative;
+      }
+      .satu {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        position: absolute;
+        left: 30%;
+        right: 30%;
+      }
+      .dua {
+        width: 200px;
+        height: 200px;
+        background-color: violet;
+        position: absolute;
+        left: 30%;
+        right: 30%;
+        bottom: 34%;
+        top: 34%;
+      }
+      .tiga {
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+        opacity: 0.5;
+        position: absolute;
+        left: 30%;
+        right: 30%;
+        bottom: 0%;
+        /* top: 50%; */
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="satu"></div>
+      <div class="dua"></div>
+      <div class="tiga"></div>
+    </div>
+  </body>
+</html>

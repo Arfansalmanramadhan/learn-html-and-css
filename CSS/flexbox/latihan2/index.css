@@ -1,0 +1,140 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: gainsboro;
+  line-height: 1.5;
+  padding-bottom: 1000px;
+}
+.container-satu {
+  max-width: 800px;
+  margin: 50px auto;
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: #fff;
+  /* display: flex; */
+}
+.bagian-tengah {
+  order: 2;
+  flex: 2;
+}
+.bagian-kiri {
+  order: 1;
+  flex: 1;
+}
+.bagian-kiri ul li {
+  list-style: none;
+}
+.bagian-kiri ul li a {
+  text-decoration: none;
+}
+.bagian-kanan {
+  order: 3;
+  flex: 1;
+}
+/* container dua */
+.container-dua {
+  max-width: 800px;
+  margin: 50px auto;
+  /* justify-content: space-between;
+  display: flex; */
+}
+.level {
+  /* width: 30%; */
+  padding: 25px;
+  box-sizing: border-box;
+}
+.level.satu {
+  background-color: red;
+}
+.level.dua {
+  background-color: blue;
+}
+.level.tiga {
+  background-color: yellow;
+}
+/* latihan 3 */
+.container-tiga {
+  max-width: 880px;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.thumbnail img {
+  width: 100%;
+}
+.thumbnail {
+  width: 50%;
+}
+/* Resopinsive */
+@media screen and (min-width: 568px) {
+  .container-satu {
+    display: flex;
+  }
+  .container-dua {
+    display: flex;
+    justify-content: space-between;
+  }
+  .level {
+    width: 30%;
+  }
+  .thumbnail {
+    width: 40%;
+  }
+  .container-empat {
+    display: flex;
+  }
+}
+.container-empat {
+  max-width: 800px;
+  margin: 50px auto;
+  /* display: flex; */
+}
+.card {
+  border: solid 2px black;
+  border-radius: 10px;
+  background-color: #fff;
+  margin: 10px;
+  overflow: hidden;
+  flex: 1;
+}
+.card .content {
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.card .header {
+  height: 100px;
+  background-color: red;
+}
+.card:hover {
+  transform: scale(1.1);
+  transition: 2s;
+}
+.card.d {
+  transform: scale(1.1);
+}
+.container-lima {
+  height: 500px;
+  width: 500px;
+  /* background-color: black; */
+  color: red;
+  margin: 1px auto;
+  border: solid 5px rgb(170, 170, 170);
+  display: flex;
+}
+.kotak {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  text-align: center;
+  margin: auto;
+  display: flex;
+}
+span {
+  margin: auto;
+}

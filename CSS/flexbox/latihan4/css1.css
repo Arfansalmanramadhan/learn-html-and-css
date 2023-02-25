@@ -1,0 +1,132 @@
+html, body{
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: "Courier New", Courier, monospace;
+    background-color: gainsboro;
+    line-height: 1.5;
+    padding-bottom: 1000px;
+}
+
+.container-satu {
+    max-width: 800px;
+    margin: 50px auto;
+    box-sizing: border-box;
+    background-color: wheat;
+    /* display: flex; */
+}
+.tengah {
+    flex: 2;
+    order: 2;
+}
+.kiri {
+    flex: 1;
+    order: 1;
+}
+ul a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.kanan {
+    flex: 1;
+    order: 3;
+}
+.container-dua {
+    max-width: 800px;
+    margin: 50px auto;
+}
+.level {
+    padding: 20px;
+    box-sizing: border-box;
+}
+.level.satu{
+    background-color: aqua;
+}
+.level.dua{
+    background-color: red;
+}
+.level.tiga{
+    background-color: blue;
+}
+.container-tiga{
+    max-width: 800px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.thumbnail img {
+    width: 100%;
+}
+.thumbnail {
+    width: 90%;
+}
+.container-empat {
+    max-width: 800px;
+    margin: 50px auto;
+}
+.card {
+    border: solid 2px black;
+    border-radius: 10px;
+    margin: 10px;
+    overflow: hidden;
+    background-color: whitesmoke;
+    flex: 1;
+}
+.card .header {
+    height: 100px;
+    background-color: aqua;
+}
+.card .content {
+    text-align: center;
+    padding: 10px;
+}
+.card.d {
+    transform: scale(1.1)
+}
+.card:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+.container-lima {
+    width: 400px;
+    height: 400px;
+    margin: 50px auto;
+    border: solid 2px black;
+    display: flex;
+}
+.kotak{
+    width: 1+00px;
+    height: 1+00px;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    background-color: black;
+    color: wheat;
+}
+.kotak span {
+    margin: auto;
+}
+@media screen and (min-width: 568px) {
+    .container-satu{
+        display: flex;
+    }
+    .container-dua{
+        display: flex;
+        justify-content: space-between;
+    }
+    .level {
+        width: 35%;
+        margin: 1px;
+    }
+    .thumbnail {
+        width: 40%;
+    }
+    .container-empat{
+        display: flex;
+        justify-content: space-around;
+    }
+}

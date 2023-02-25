@@ -1,0 +1,46 @@
+// :root {
+//   --biru-warna: blue;
+//   --warna-utama: salmon;
+//   --warna-tex: red;
+// }
+// body {
+//   background-color: var(--biru-warna);
+// }
+// h1 {
+//   color: var(--warna-tex);
+// }
+// p {
+//   color: var(--warna-utama);
+// }
+
+// SASS Variable
+// $warna-utama: salmon;
+// $warna-tex: red;
+// $biru-warna: green;
+// body {
+//   $biru-warna: blue !global;
+//   background-color: $biru-warna;
+// }
+// h1 {
+//   color: $warna-utama;
+// }
+// p {
+//   color: $biru-warna;
+// }
+
+// Map
+
+$alert: (
+  "merah": red,
+  "biru": blue,
+  "abu-abu": gray,
+);
+body {
+  background-color: map-get($alert, "merah");
+  h1 {
+    color: map-get($alert, "biru");
+  }
+  p {
+    color: map-get($alert, "abu-abu");
+  }
+}

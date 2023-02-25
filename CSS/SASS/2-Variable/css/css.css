@@ -1,0 +1,14 @@
+.container {
+  width: 800px;
+  margin: auto;
+  background-color: gray;
+}
+
+.container .header {
+  width: 50%;
+  margin: 50px auto;
+  text-align: center;
+  color: blue;
+  background-color: red;
+}
+/*# sourceMappingURL=css.css.map */

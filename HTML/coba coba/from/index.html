@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fORM</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <div class="container">
+    <form method="post" action="" name="nama">
+        <label class="from1">
+            Username <br>
+            <input type="text" name="username " class="from2 " id="AA">
+        </label>
+        <label class="from1">
+            Username <br>
+            <input type="text" name="username " class="from2  " id="BB">
+        </label>
+        <input type="submit" value="kirim">
+    </from>
+    <div id="item"></div>
+   </div>
+   <script>
+       const from = document.forms["nama"];
+       from.addEventListener('submit', e =>{
+           e.preventDefault();
+           const item = document.getElementById("item");
+           const n = document.getElementById('AA').value;
+           const nn = document.getElementById('BB').value;
+
+
+           const itemm = document.createElement('p');
+           itemm.textContent = `${n} - ${nn}`;
+           item.appendChild(itemm);
+
+           from.reset()
+       })
+   </script>
+</body>
+</html>

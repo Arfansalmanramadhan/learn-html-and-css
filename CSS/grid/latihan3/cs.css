@@ -1,0 +1,135 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ddd;
+}
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "header header header"
+    "sidebar sidebar sidebar"
+    "content content content"
+    "footer footer footer";
+   
+}
+
+/* responsive 
+
+
+.item {
+    width: 100%;
+    background-color: rgb(138, 209, 254);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    box-sizing: border-box;
+}
+
+.item:nth-child(even) {
+background-color: rgb(255, 142, 142);
+}
+.header{
+    grid-area: header;
+    background-color: blue;
+}
+.sidebar{
+    grid-area: sidebar;
+    background-color: aqua;
+}
+.content{
+    grid-area: content;
+    background-color: red;
+}
+.footer{
+    grid-area: footer;
+    background-color: yellow;
+}
+
+@media screen and (min-width: 667px){
+    .container{
+        grid-template-areas: 
+            "header header header"
+            "sidebar content content"
+            "sidebar content content"
+            "footer footer footer";
+    }
+}
+/* html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ddd;
+}
+
+.container {
+    width: 60%;
+    margin: 50px auto;
+    display: grid;
+     grid-template-rows: [baris1-mulai] 50px [baris1-akhir baris1-akhir] 100px [baris2-akhir];
+    grid-template-columns: 1fr 2fr 3fr;
+    grid-template-areas:
+      'header header header'
+      'footer footer footer'; 
+    grid-template:[baris1-mulai]"header header header" [baris1-akhir baris2-akhir] 50px "footer footer footer"50px [baris2-akhir] / 1fr 2fr 3fr;
+}
+
+
+
+
+.item {
+    width: 100%;
+    background-color: rgb(138, 209, 254);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    box-sizing: border-box;
+}
+
+.item:nth-child(even) {
+background-color: rgb(255, 142, 142);
+}
+
+
+ */
+
+ /* html,
+ body {
+     margin: 0;
+     padding: 0;
+     background-color: #ddd;
+ }
+ 
+ .container {
+     width: 80%;
+     margin: 50px auto;
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+  row-gap: 10px;
+     column-gap: 10px;
+     gap: 10px;
+    
+ }
+ 
+
+ 
+ 
+ .item {
+     width: 100%;
+     background-color: rgb(138, 209, 254);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 100px;
+     box-sizing: border-box;
+ }
+ 
+ .item:nth-child(even) {
+ background-color: rgb(255, 142, 142);
+ } */

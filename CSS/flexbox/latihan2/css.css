@@ -1,0 +1,138 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Courier New", Courier, monospace;
+  background-color: gainsboro;
+  line-height: 1.5;
+  padding-bottom: 1000px;
+}
+.container-satu {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 25px;
+  box-sizing: border-box;
+  background-color: #fff;
+  /* display: flex; */
+}
+
+.tengah {
+  flex: 3;
+  order: 2;
+}
+
+.kiri {
+  order: 1;
+  flex: 1;
+}
+.kanan {
+  order: 2;
+  flex: 1;
+}
+/* latihan 2 */
+.container-dua {
+  max-width: 800px;
+  margin: 50px auto;
+}
+.level {
+  padding: 20px;
+  box-sizing: border-box;
+}
+.level.satu {
+  background-color: aqua;
+}
+.level.dua {
+  background-color: red;
+}
+.level.tiga {
+  background-color: blueviolet;
+}
+/* Resopinsive */
+@media screen and (min-width: 600px) {
+  .container-dua {
+    display: flex;
+    justify-content: space-between;
+  }
+  .Bagian {
+    width: 50%;
+  }
+  .level {
+    width: 30%;
+  }
+  .thumbnail {
+    width: 30%;
+  }
+
+  .naik.card {
+    width: 30%;
+  }
+  .container-empat {
+    display: flex;
+  }
+  .container-satu {
+    display: flex;
+  }
+  img {
+    width: 50%;
+  }
+}
+
+/* latihan 3 */
+.container-tiga {
+  max-width: 800px;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+img {
+  width: 100%;
+}
+/* latihan4 */
+.container-empat {
+  max-width: 800px;
+  margin: 50px auto;
+  /* display: flex; */
+}
+.naik.card {
+  border: 1px solid gray;
+  border-radius: 10px;
+  background-color: wheat;
+  overflow: hidden;
+  margin: 10px;
+  flex: 1;
+}
+.card .header {
+  height: 150px;
+  background-color: teal;
+}
+.card .content {
+  text-align: center;
+  padding: 20px;
+}
+.card.besar {
+  transform: scale(1.12);
+}
+.container-lima {
+  width: 500px;
+  height: 500px;
+  margin: 50px auto;
+  border: 5px solid black;
+  display: flex;
+}
+.kotak {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  color: red;
+  text-align: center;
+  /* line-height: 100px; */
+  margin: auto;
+  display: flex;
+}
+.kotak span {
+  margin: auto;
+}

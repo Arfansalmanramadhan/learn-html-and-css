@@ -1,0 +1,68 @@
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header ul li {
+  display: inline-block;
+}
+
+.header ul li {
+  background-color: black;
+  padding: 0.5rem;
+}
+
+.header ul li a {
+  color: wheat;
+  text-decoration: none;
+}
+
+.footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer ul li {
+  display: inline-block;
+}
+
+.footer ul li {
+  padding: 0.4rem;
+  background-color: saddlebrown;
+}
+
+.footer ul li a {
+  color: wheat;
+  text-decoration: none;
+}
+
+.container {
+  width: 80%;
+  height: 400px;
+  background-color: #eaeaea;
+  margin: 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.container .box {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  background-color: lightgreen;
+  text-align: center;
+}
+/*# sourceMappingURL=main.css.map */

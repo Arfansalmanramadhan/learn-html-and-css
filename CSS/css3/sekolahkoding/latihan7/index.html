@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar CSS3</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background: salmon;
+        animation-name: satu;
+        animation-duration: 2s;
+        -webkit-animation-name: satu;
+        -webkit-animation-duration: 2s;
+        animation-iteration-count: 2;
+        /* animation-direction: alternate; */
+        animation-delay: 2s;
+
+        animation-fill-mode: backwards;
+        -webkit-animation-fill-mode: backwards;
+        animation-timing-function: ease-in;
+        animation-play-state: paused;
+      }
+      div:hover {
+        animation-play-state: running;
+      }
+      @-webkit-keyframes satu {
+        from {
+          background: salmon;
+        }
+        to {
+          background: red;
+        }
+      }
+      @keyframes satu {
+        from {
+          background: salmon;
+        }
+        to {
+          background: red;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Animasi</h1>
+    <div></div>
+  </body>
+</html>

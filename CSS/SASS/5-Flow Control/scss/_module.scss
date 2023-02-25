@@ -1,0 +1,46 @@
+// if
+@mixin profile-pic($size, $sizee, $circle: false) {
+  width: $size;
+  height: $sizee;
+  border: 5px dashed white;
+  box-shadow: 1px 1px 3px rgba($color: #000000, $alpha: 0.3);
+
+  @if $circle {
+    border-radius: 50%;
+  }
+}
+
+//  else
+$putih-bd: #eaeaea;
+$putih-tes: #333;
+$hitam-bd: #999;
+$hitam-tes: #ddd;
+
+@mixin color-mode($light-mode: true) {
+  @if $light-mode {
+    background-color: $putih-bd;
+    color: $putih-tes;
+  } @else {
+    background-color: $hitam-bd;
+    color: $hitam-tes;
+  }
+}
+
+// else if
+@mixin triangle($size, $color, $direction) {
+  width: 0;
+  margin: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: $size / 2;
+
+  @if $direction == up {
+    border-bottom-color: $color;
+  } @else if $direction == right {
+    border-left-color: $color;
+  } @else if $direction == left {
+    border-right-color: $color;
+  } @else {
+    border-top-color: $color;
+  }
+}

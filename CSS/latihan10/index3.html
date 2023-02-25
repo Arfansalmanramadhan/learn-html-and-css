@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flow CSS 3</title>
+    <style>
+      .container {
+        width: 800px;
+        border: 5px black solid;
+        margin: auto;
+        padding: 5px;
+      }
+
+      .kiri {
+        width: 150px;
+        height: 500px;
+        float: left;
+        background-color: salmon;
+        overflow: auto;
+      }
+      .tengah {
+        width: 500px;
+        height: 500px;
+        float: left;
+        background-color: red;
+      }
+      .kanan {
+        width: 150px;
+        height: 500px;
+        float: right;
+        overflow: auto;
+        background-color: blue;
+      }
+      .container::after,
+      .container::before {
+        content: " ";
+        display: table;
+        clear: both;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="kiri">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque sequi officiis id nulla distinctio vel illo quod ipsum asperiores incidunt quae quam deleniti, magni consequatur ipsa error
+          architecto sed optio ullam sint necessitatibus et libero aperiam alias. Eius voluptatibus, rerum consequuntur, rem enim in dolores distinctio debitis officia atque esse! Maxime id esse nihil
+          expedita sequi ipsam corrupti molestias ullam reprehenderit vitae eaque nemo, officiis distinctio modi saepe quod et quo est ab tenetur magnam! Quasi, dolorem sed? Magnam quia ab distinctio
+          minus, debitis recusandae accusantium suscipit omnis officiis aspernatur itaque, pariatur vero mollitia! Ipsum corrupti minima doloribus explicabo exercitationem.
+        </p>
+      </div>
+      <div class="tengah">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio omnis natus voluptate doloremque tempora, fugiat necessitatibus in asperiores deserunt magni perferendis nam. Velit enim
+          dolorum rerum eveniet! Cum vel ipsam esse voluptatum dolores debitis, magnam sunt deserunt dolorem id. Ex eos recusandae molestiae natus. Rerum, quas velit autem doloremque doloribus
+          similique. Recusandae laborum corrupti laudantium facilis deleniti velit explicabo, soluta, aliquid quis saepe commodi hic provident non nulla atque tempore repellat quos delectus ut
+          accusantium, illo molestiae vel quasi? Minima ut sint dolor veritatis! Veritatis commodi enim fuga fugiat incidunt facere atque magni saepe, vel fugit praesentium ex? Nam, porro! Lorem
+          ipsum, dolor sit amet consectetur adipisicing elit. Voluptates corrupti veniam harum vitae molestias hic cum, exercitationem ex velit nesciunt porro nisi ipsum commodi quae illo sapiente
+          earum id nihil. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quisquam ipsum necessitatibus. Maiores omnis fugiat voluptates saepe similique, at dolores provident nobis, dolor
+          ipsam iusto, quos culpa quod quasi? Voluptas? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum facilis maxime cum cupiditate quaerat earum vitae eveniet sit. Est culpa
+          numquam blanditiis perferendis quod ipsum excepturi velit fuga molestias ipsam!
+        </p>
+      </div>
+      <div class="kanan">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt labore modi necessitatibus perspiciatis? Exercitationem autem ad illum odit accusamus, quam fuga tenetur porro numquam
+          architecto, minus alias doloremque magni consectetur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima sequi labore numquam laborum a repellendus quibusdam nam alias
+          cupiditate voluptates? Facere tempora labore repellat, aspernatur perspiciatis ullam blanditiis hic neque.
+        </p>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </body>
+</html>

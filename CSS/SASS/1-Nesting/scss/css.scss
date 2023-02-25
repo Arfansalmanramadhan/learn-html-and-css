@@ -1,0 +1,45 @@
+// .main {
+//   background-color: gray;
+//   .main-header {
+//     font-size: 2em;
+//   }
+//   .main-p {
+//     font-family: "Times New Roman", Times, serif;
+//     font-size: 12px;
+//   }
+// }
+
+// .main,
+// .footer {
+//   h1,
+//   p {
+//     letter-spacing: 1px;
+//   }
+// }
+
+// .main {
+//   .container & {
+//     max-width: 80%;
+//     margin: 50px auto;
+//   }
+//   &:hover {
+//     background-color: salmon;
+//   }
+// }
+
+.main {
+  #{&}-header {
+    font-size: 2em;
+    letter-spacing: 1.5px;
+  }
+  #{&}-p {
+    font-size: 1.5em;
+    letter-spacing: 1px;
+  }
+}
+.footer {
+  #{&}-p {
+    font-size: 1.5em;
+    letter-spacing: 1px;
+  }
+}

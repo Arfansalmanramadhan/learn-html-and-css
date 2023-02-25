@@ -1,0 +1,62 @@
+// .header,
+// .footer {
+//   ul {
+//     margin: 0;
+//     padding: 0;
+//     list-style: none;
+//   }
+//   ul li {
+//       display: inline-block;
+//   }
+// }
+
+@mixin inline-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  li {
+    display: inline-block;
+  }
+}
+
+.header ul {
+  @include inline-list();
+  li {
+    background-color: black;
+    padding: 0.5rem;
+    a {
+      color: wheat;
+      text-decoration: none;
+    }
+  }
+}
+.footer ul {
+  @include inline-list();
+  li {
+    padding: 0.4rem;
+    background-color: saddlebrown;
+    a {
+      color: wheat;
+      text-decoration: none;
+    }
+  }
+}
+@mixin flex-box($direction: row, $space: center) {
+  display: flex;
+  justify-content: $space;
+  align-items: center;
+  flex-direction: $direction;
+}
+.container {
+  width: 80%;
+  height: 400px;
+  background-color: #eaeaea;
+  @include flex-box(row-reverse, space-between);
+  .box {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    background-color: lightgreen;
+    text-align: center;
+  }
+}

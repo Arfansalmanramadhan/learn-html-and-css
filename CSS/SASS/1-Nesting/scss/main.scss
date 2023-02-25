@@ -1,0 +1,52 @@
+// .main {
+//   background-color: aqua;
+
+//   .main-header {
+//     font-size: 2em;
+//   }
+//   .main-p {
+//     font-size: 1.4em;
+//   }
+// }
+
+// .main,
+// footer {
+//   h1,
+//   p {
+//     letter-spacing: 2px;
+//   }
+// }
+
+// &
+// Parent Selector
+// .main {
+//   .container & {
+//     background-color: lightblue;
+//   }
+//   .main-header {
+//     font-size: 2em;
+//   }
+
+//   &:hover {
+//     background-color: lightcoral;
+//     cursor: pointer;
+//   }
+// }
+
+.main {
+  #{&}-header {
+    font-size: 2em;
+  }
+  #{&}-p {
+    font-size: 1.5em;
+  }
+}
+
+.footer {
+  #{&}-header {
+    font-size: 2em;
+  }
+  #{&}-p {
+    font-size: 1.4em;
+  }
+}

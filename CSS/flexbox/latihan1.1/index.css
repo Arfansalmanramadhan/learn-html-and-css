@@ -1,0 +1,55 @@
+/* 
+ flex-direction:row | row-reverse | column | column-reverse; (Mengatur arah atau ururtan dari items di dalam container)
+ flex-wrap: nowrap | wrap | wrap-reverse; (Secaraa default, semua items di dalam container akan berada pada satu baris meskipun ukuransudah tidak cukup, wrap memuungkinkan untuk memidahkan items ke baris di bawahnya )
+ justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly; (mangatur antar items)
+ align-items:flex-start | flex-end | center | strech | baseline ; (Mengatur perilaku penjajaran items terhadap cross axis)
+ align-content:flex-start | fles-end | center | strech | space-around | space-between; (mengatur jarak antar items terhadap cross axis)
+  align-self:auto | flex-start | flex-end | center | baseline | stretch; (mengatur perilaku penjajaran sebuah item yang spesifik terhadp cross axis)
+*/
+
+.container {
+  border: dashed 5px black;
+  width: 600px;
+  height: 400px;
+  margin: 10px auto;
+  padding: 5px;
+  box-sizing: border-box;
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* justify-content: center; */
+  /* align-items: baseline; */
+  /* align-content: space-between; */
+}
+.container div {
+  width: 120px;
+  height: 120px;
+  /* float: left; */
+  line-height: 120px;
+  text-align: center;
+  background-color: aqua;
+  margin: 2px;
+  flex: 1;
+}
+.container div.satu {
+  order: 4;
+  flex: 4;
+  align-self: stretch;
+}
+.container div.dua {
+  order: 3;
+  flex: 3;
+}
+.container div.tiga {
+  order: 2;
+  flex: 2;
+}
+.container div.empat {
+  order: 1;
+  flex: 1;
+}
+/* .container::after,
+.container::before {
+  content: "";
+  display: table;
+  clear: both;
+} */

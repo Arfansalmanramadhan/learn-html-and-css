@@ -1,0 +1,84 @@
+.header {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header li {
+  display: inline-block;
+  padding: 0.35em;
+}
+
+.header li a {
+  text-decoration: none;
+}
+
+.header li {
+  background-color: black;
+}
+
+.header li a {
+  color: white;
+}
+
+.main {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main li {
+  display: inline-block;
+}
+
+.main .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 80%;
+  height: 200px;
+  margin: auto;
+  background-color: green;
+}
+
+.main .container .box {
+  margin: auto;
+  background-color: white;
+}
+
+.footer {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.footer li {
+  display: inline-block;
+  padding: 0.35em;
+}
+
+.footer li a {
+  text-decoration: none;
+}
+
+.footer li {
+  background-color: green;
+}
+
+.footer li a {
+  color: white;
+}
+/*# sourceMappingURL=css.css.map */

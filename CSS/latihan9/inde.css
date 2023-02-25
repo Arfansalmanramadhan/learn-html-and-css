@@ -1,0 +1,31 @@
+/* border : solid, dotted, dashed, double */
+* {
+  margin: 0;
+  padding: 0;
+}
+.satu {
+  border: dotted salmon 5px;
+  padding: 10px;
+  background-color: green;
+}
+.dua {
+  border: double red 5px;
+  padding: 10px;
+  background-color: blue;
+}
+div {
+  width: 600px;
+  margin: 10px auto;
+  box-sizing: border-box;
+  /* background-color: chocolate; */
+}
+/* .satu {
+  border: 5px dotted black;
+  padding: 10px;
+  background-color: blue;
+}
+.dua {
+  border: 5px double blue;
+  padding: 20px;
+  background-color: red;
+} */

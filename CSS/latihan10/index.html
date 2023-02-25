@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flow css 1</title>
+    <style>
+      /* .container {
+        width: 600px;
+        border: solid 3px black;
+        margin: auto;
+        padding: 4px;
+        box-sizing: border-box;
+      }
+
+      img {
+        float: left;
+      }
+
+      .clear {
+        clear: left;
+      } */
+     .container{
+       width: 500px;
+       margin: 10px auto;
+       border: dashed black 1px;
+       padding: 5px;
+       box-sizing: border-box;
+     }
+     img {
+       float: right;
+     }
+      .container::after,
+      .container::before {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <img src="../latihanprojek/img/katamata.png" alt="kacamata" title="kacamata" width="250" height="250" />
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint architecto, eaque temporibus laborum nulla error fugit aliquid autem, at, corporis ipsam. Ex debitis dolorem consequatur tempore
+        beatae delectus porro obcaecati?
+      </p>
+      <div class="clear"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar css 3</title>
+    <style>
+      div {
+        margin-bottom: 500px;
+        margin-left: 50px;
+      }
+      #card {
+        position: relative;
+        width: 200px;
+        height: 200px;
+
+        transition: transform 1s;
+        /* cursor: pointer; */
+        transform-style: preserve-3d;
+        border: 1px solid beige;
+      }
+      #front,
+      #back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 200px;
+        height: 200px;
+        backface-visibility: hidden;
+      }
+      #front {
+        background: salmon;
+      }
+      #back {
+        background: red;
+        transform: rotateY(180deg);
+      }
+      #card:hover {
+        transform: rotateY(180deg);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flipcard</h1>
+    <div id="box">
+      <div id="card">
+        <div id="front">arfan</div>
+        <div id="back">salman</div>
+      </div>
+    </div>
+  </body>
+</html>

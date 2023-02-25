@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* 
+.satu{
+    width: 200px;
+    height: 200px;
+    background-color: lightblue; 
+    margin: 50px auto;  
+}
+.dua{
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+    margin: 50px auto;
+}
+.tiga{
+    width: 50px;
+    height: 50px;
+    background-color: violet;
+    margin: 50px auto;
+} */
+
+.satu {
+  width: 300px;
+  height: 300px;
+  background-color: aqua;
+  margin: auto;
+}
+.dua {
+  width: 200px;
+  height: 200px;
+  background-color: salmon;
+  margin: auto;
+}
+.tiga {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin: auto;
+}

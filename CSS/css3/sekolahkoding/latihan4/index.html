@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar CSS 3 Part 4</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background: blue;
+        margin-bottom: 10px;
+        line-height: 100px;
+        text-align: center;
+        transition: all 1s;
+      }
+      #satu:hover {
+        width: 200px;
+        height: 200px;
+        font-size: 2rem;
+        line-height: 200px;
+        transition-timing-function: ease;
+        transform: rotate(360deg);
+        /* border-radius: 50%; */
+      }
+      #dua:hover {
+        /* transition-delay: 1s; */
+        background: red;
+        color: blue;
+        width: 200px;
+        transition-timing-function: ease-in;
+        transform: skew(20deg);
+      }
+      #tiga:hover {
+        width: 200px;
+        box-shadow: 0 0 0 3px red;
+        font-family: "Courier New", Courier, monospace;
+        transition-timing-function: ease-out;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Transition</h1>
+    <div id="satu">Arfan</div>
+    <div id="dua">Salman</div>
+    <div id="tiga">Ramadhan</div>
+  </body>
+</html>

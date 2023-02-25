@@ -1,0 +1,39 @@
+@import "modules/mixin";
+@import "modules/flex-box";
+.header ul {
+  @include inline-list();
+  li {
+    background-color: black;
+    padding: 0.5rem;
+    a {
+      color: wheat;
+      text-decoration: none;
+    }
+  }
+}
+.footer ul {
+  @include inline-list();
+  li {
+    padding: 0.4rem;
+    background-color: saddlebrown;
+    a {
+      color: wheat;
+      text-decoration: none;
+    }
+  }
+}
+
+.container {
+  width: 80%;
+  height: 400px;
+  background-color: #eaeaea;
+  margin: 20px auto;
+  @include flex-box(row-reverse, space-between);
+  .box {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    background-color: lightgreen;
+    text-align: center;
+  }
+}

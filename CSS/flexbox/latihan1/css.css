@@ -1,0 +1,41 @@
+/* 
+propertiy pada container
+display: flex atau inline-flex
+    flex-direction:row | row-reverse | column | column-reverse;{
+    mengatur arah elemen-elemen di dalamnya
+    flex-wrap: nowrap | wrap | wrap-reverse
+    justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly
+    align-items:flex-start | flex-end | center | strech | baseline ;
+    align-content:flex-start | fles-end | center | strech | space-betwenn | space-around;
+
+propertiy pada items
+    order
+    flex
+    align-self:auto | flex-start | flex-end | center | baseline | stretch;
+ */
+.container{
+    width: 600px;
+    height: 400px;
+    border: 2px solid black;
+    margin: 20px auto;
+    box-sizing: border-box;
+    padding: 2px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+}
+
+.container div{
+    /* width: 120px;
+    height: 120px; */
+    background-color: aqua;
+    margin: 3px;
+    flex: 1;
+}
+
+.container div.dua{
+    align-self: stretch;
+}
+
+
+

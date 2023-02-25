@@ -1,0 +1,74 @@
+@mixin lis {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+  li {
+    display: inline-block;
+    padding: 0.35em;
+    a {
+      text-decoration: none;
+    }
+  }
+}
+@mixin liss {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+  li {
+    display: inline-block;
+  }
+}
+@mixin flex($justfy: center, $tex: center) {
+  display: flex;
+  justify-content: $justfy;
+  text-align: $tex;
+  flex-direction: row;
+}
+$colo: (
+  "hitam": black,
+  "hijau": green,
+  "putih": white,
+);
+.header {
+  @include lis();
+  li {
+    background-color: map-get($map: $colo, $key: "hitam");
+
+    a {
+      color: map-get($map: $colo, $key: "putih");
+    }
+  }
+}
+.main {
+  //   justify-content: space-around;
+  //   justify-content: space-between;
+  //   justify-content: space-evenly;
+  @include liss();
+  .container {
+    @include flex(space-around, center);
+    width: 80%;
+    height: 200px;
+    margin: auto;
+    background-color: map-get($map: $colo, $key: "hijau");
+    .box {
+      //   width: 100px;
+      //   height: 100px;
+      margin: auto;
+      //   text-align: center;
+      //   line-height: 100px;
+
+      background-color: map-get($map: $colo, $key: "putih");
+    }
+  }
+}
+.footer {
+  @include lis();
+  li {
+    background-color: map-get($map: $colo, $key: "hijau");
+    a {
+      color: map-get($map: $colo, $key: "putih");
+    }
+  }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Shadow dan test Shadow</title>
+    <style>
+      .container {
+        height: 500px;
+        width: 500px;
+        margin: 50px auto;
+        display: flex;
+      }
+      .kotak {
+        width: 400px;
+        height: 400px;
+        background-color: gray;
+        margin: auto;
+        text-align: center;
+        display: flex;
+        box-sizing: border-box;
+        box-shadow: 0px 0px 0px 5px red, 0 0 0 10px blue, 0 0 0 15px blueviolet;
+        cursor: pointer;
+        text-align: center;
+        /* line-height: 400px; */
+        font-size: 40px;
+        text-shadow: -4px 5px 10px blue;
+        /* display: flex; */
+      }
+      span {
+        margin: auto;
+        text-align: center;
+      }
+      .container .kotak:hover {
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="kotak">
+        <span>Arfan Salman Ramadhan </span>
+      </div>
+    </div>
+  </body>
+</html>

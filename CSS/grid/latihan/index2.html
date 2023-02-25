@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive web</title>
+    <link rel="stylesheet" href="css2.css" />
+  </head>
+  <body>
+    <section class="container">
+      <header>
+        <div class="about">
+          <!-- <img src="img/1.jpeg" alt="SATU" id="header-about"> -->
+          <h2 class="heading">About me</h2>
+          <p class="sub-heading">I'm Arfan Salman Ramadhan</p>
+        </div>
+        <div class="abouts bagian-1">
+          <!-- <img src="img/2.jpg" alt="SATU" > -->
+          <h4 class="item">School</h4>
+          <p class="sub">Univesitas Telkom Bandung</p>
+        </div>
+        <div class="abouts bagian-2">
+          <!-- <img src="img/3.jpg" alt="SATU" > -->
+          <h4 class="item">Work</h4>
+          <p class="sub">Bank end Developer</p>
+        </div>
+      </header>
+      <nav class="nav-bar">
+        <section class="menu-toggle" id="menu">
+          <input type="checkbox" name="" id="" />
+          <span></span>
+          <span></span>
+          <span></span>
+        </section>
+        <section class="brand">
+          <h1>Arfan Salman Ramadhan</h1>
+        </section>
+        <ul>
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        </ul>
+      </nav>
+      <main class="main">
+        <section class="container">
+          <section class="row tengah">
+            <section class="col">
+              <h2>About</h2>
+            </section>
+          </section>
+          <section class="row">
+            <article class="col">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Aperiam consectetur deserunt harum a. Odit suscipit quos
+                repellat perspiciatis eveniet omnis provident similique
+                asperiores fuga, corrupti nostrum, illo qui minus totam.
+              </p>
+            </article>
+            <article class="col">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae
+                iure, facere autem fugit quia eos tempore provident illum nihil
+                fugiat accusamus soluta dolore quas maxime expedita, delectus
+                fuga. Consequuntur, quibusdam?
+              </p>
+            </article>
+          </section>
+        </section>
+        <hr />
+        <hr />
+
+        <section class="container">
+          <section class="row tengah">
+            <section class="col">
+              <h3>Skill</h3>
+            </section>
+          </section>
+          <section class="row roww">
+            <article class="col">
+              <h3>Microsoft Visual Studio Code</h3>
+            </article>
+            <article class="col">
+              <h3>JavaScript</h3>
+            </article>
+            <article class="col">
+              <h3>HTML</h3>
+            </article>
+            <article class="col">
+              <h3>CSS</h3>
+            </article>
+            <article class="col">
+              <h3>GitHub</h3>
+            </article>
+            <article class="col">
+              <h3>Git</h3>
+            </article>
+            <article class="col">
+              <h3>SASS</h3>
+            </article>
+          </section>
+        </section>
+      </main>
+    </section>
+    <script>
+        const menu = document.querySelector(".menu-toggle");
+        const nav = document.querySelector("nav ul");
+        const span = document.querySelectorAll(".menu-toggle span");
+        menu.addEventListener('click', () =>{
+            nav.classList.toggle('slide');
+            span.forEach(a => {
+                a.classList.toggle('slide');
+            })
+        })
+    </script>
+  </body>
+</html>

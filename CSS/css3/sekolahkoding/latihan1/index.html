@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar CSS 3 part 1</title>
+    <style>
+      #satu {
+        width: 100px;
+        height: 100px;
+        background: blue;
+        border-radius: 50px;
+      }
+      #dua {
+        width: 100px;
+        height: 100px;
+        background: blue;
+        /* box-shadow: horizontal vertikal blur spread color; */
+        box-shadow: 0px 0px 0px 4px black;
+      }
+      #tiga {
+        width: 100px;
+        height: 100px;
+        background: blue;
+        padding: 1rem;
+        box-sizing: border-box;
+        border: 6px solid black;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="satu"></div>
+    <hr />
+    <h2>box shadow</h2>
+    <div id="dua"></div>
+    <hr />
+    <h2>Box Sizing dan vendor prefis</h2>
+    <div id="tiga"></div>
+  </body>
+</html>

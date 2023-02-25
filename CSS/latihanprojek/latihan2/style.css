@@ -1,0 +1,224 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* css utama */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(255, 0, 255);
+  height: 40px;
+}
+.navbar {
+  width: 900px;
+  margin: 1px auto;
+  position: relative;
+}
+.navbar ul li {
+  float: right;
+  margin-right: 20px;
+}
+.judul {
+  font-size: 20px;
+}
+.navbar a {
+  display: block;
+  text-decoration: none;
+}
+
+.box {
+  width: 1000px;
+  margin: 40px auto;
+  background-color: #ddd;
+  text-align: center;
+  box-sizing: border-box;
+  border-bottom: solid red 5px;
+  border-top: solid blue 5px;
+}
+img {
+  border-radius: 50%;
+  border: 5px solid rgb(100, 100, 100);
+  box-shadow: 0px 0px 0px 5px black, 0px 0px 0px 10px gray;
+  margin: 20px 0;
+}
+h2 {
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+p {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 13px;
+  padding: 5px 0;
+}
+.container {
+  width: 1000px;
+  height: 700px;
+  margin: auto;
+  background-color: #ddd;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.main {
+  width: 300px;
+  height: 700px;
+  background-color: red;
+  float: left;
+}
+.main p {
+  font-size: 20px;
+  line-height: 15px;
+}
+.mainn p {
+  font-size: 20px;
+  line-height: 15px;
+}
+.mainnn p {
+  font-size: 20px;
+  line-height: 15px;
+}
+.mainn {
+  width: 300px;
+  height: 700px;
+  float: left;
+}
+.mainnn {
+  width: 300px;
+  height: 700px;
+  float: right;
+}
+.clear {
+  clear: both;
+}

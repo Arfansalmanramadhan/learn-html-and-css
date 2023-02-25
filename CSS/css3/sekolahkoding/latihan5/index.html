@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar CSS 3 5</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      #satu0 {
+        perspective: 100px;
+        perspective-origin: 50% 50%;
+      }
+      #satu1 {
+        background-color: blue;
+        transform: rotateX(45deg);
+      }
+      #dua0,
+      #tiga0 {
+        perspective: 100px;
+        perspective-origin: 60% 10%;
+      }
+      #dua1 {
+        background-color: red;
+        transform: translateZ(1px) rotateZ(25deg);
+        transition: all 2s;
+      }
+      #dua1:hover {
+        transform: translateZ(10px) rotateX(50deg);
+      }
+      #tiga1 {
+        background-color: saddlebrown;
+        transform: scaleZ(1) rotateY(45deg);
+        transition: all 2s;
+      }
+      #tiga1:hover {
+        transform: scaleZ(1.5);
+      }
+      #tiga2 {
+        background-color: salmon;
+        transform: scaleY(1) rotateY(45deg);
+        transition: all 2s;
+      }
+      #tiga2:hover {
+        transform: scaleY(1.5);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Perspective</h1>
+    <div id="satu0">
+      <div id="satu1"></div>
+    </div>
+    <h1>Translate dan Rotate</h1>
+    <div id="dua0">
+      <div id="dua1"></div>
+    </div>
+    <h1>Scale</h1>
+    <div id="tiga0">
+      <div id="tiga1">Scale</div>
+      <div id="tiga2">Scale</div>
+    </div>
+  </body>
+</html>
